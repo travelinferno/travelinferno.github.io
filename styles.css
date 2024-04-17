@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@font-face {
+    font-family: CloisterBlack;
+    src: url(fonts/CloisterBlack.ttf);
+}
+
+body { 
+    margin: 0; 
+    background-color: black;
+    color: white;
+    font-family: 'Cormorant Garamond';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+    cursor: default;
+}
+
+h1.text {
+    font-family: 'Cinzel';
+    font-size: 200%;
+}
+
+h2.text {
+    font-size: 140%;
+}
+
+span.text {
+    background-color: #b61a1f;
+    padding: 0.15em;
+    border-radius: 0.2em;
+}
+
+p.text {
+    width: 80%;
+    margin: 2% auto;
+}
+
+img.text {
+    position: absolute;
+    border: 5px solid white;
+}
+
+.bg {
+    margin: auto;
+}
+
+.bg-home {
+    position: absolute;
+    width: 100%; 
+    height: 80%; 
+    background: black bottom;
+    background-image: url('images/DanteAndVirgilCorotCropped.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-text {
+    position: absolute;
+    z-index: 0;
+    font-family: 'Cinzel';
+    font-size: 300%;
+    line-height: 200%;
+    width: 100%;
+    white-space: nowrap;
+    text-shadow: 5px 5px 0 #555;
+    cursor: default;
+}
+
+.bg-header {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: black;
+    white-space: nowrap;
+    font-family: CloisterBlack;
+    font-size: 250%;
+    margin: -3% 0;
+}
+
+#button-top {
+    display: block;
+    margin-top: -1%;
+    margin-left: 46%;
+    margin-right: auto;
+    padding-bottom: 1%;
+    width: 70px;
+    filter: brightness(0.7);
+}
+
+#button-top:hover {
+    filter: brightness(1);
+    cursor: pointer;
+}
+
+#menu-button {
+    transition: filter 0.4s;
+    border-radius: 50%;
+    border: 0.1em solid black;
+}
+
+#menu-button:hover {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.menu {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    display: inline-block;
+    z-index: 2;
+}
+
+.menu-item {
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    position: fixed;
+    display: block;
+    bottom: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px #555;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.menu-item span {
+    visibility: hidden;
+    font-family: 'Cinzel';
+    font-size: 150%;
+    background-color: rgba(2, 2, 2, 0.7);
+    padding: 5px 5px;
+    border-radius: 6px;
+    white-space: nowrap;
+    margin-left: -100%;
+    margin-right: -100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.menu-item:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.panUp {
+    animation-name: panUp;
+    visibility: visible;
+}
+
+.panDown {
+    animation-name: panDown;
+    visibility: visible;
+    animation-fill-mode: forwards;
+}
+
+.panUp:nth-child(1) { animation-duration: 1.6s }
+.panUp:nth-child(2) { animation-duration: 1.7s }
+.panUp:nth-child(3) { animation-duration: 1.8s }
+.panUp:nth-child(4) { animation-duration: 1.9s }
+.panUp:nth-child(5) { animation-duration: 2.0s }
+.panUp:nth-child(6) { animation-duration: 2.1s }
+.panUp:nth-child(7) { animation-duration: 2.2s }
+.panUp:nth-child(8) { animation-duration: 2.3s }
+.panUp:nth-child(9) { animation-duration: 2.4s }
+.panUp:nth-child(10) { animation-duration: 2.5s }
+
+@keyframes panUp {
+    from {
+        margin-bottom: -100%;
+    }
+    to {
+        margin-bottom: 0%;
+    }
+}
+
+.panDown:nth-child(1) { animation-duration: 2.1s }
+.panDown:nth-child(2) { animation-duration: 2.2s }
+.panDown:nth-child(3) { animation-duration: 2.3s }
+.panDown:nth-child(4) { animation-duration: 2.4s }
+.panDown:nth-child(5) { animation-duration: 2.5s }
+.panDown:nth-child(6) { animation-duration: 2.6s }
+.panDown:nth-child(7) { animation-duration: 2.7s }
+.panDown:nth-child(8) { animation-duration: 2.8s }
+.panDown:nth-child(9) { animation-duration: 2.9s }
+.panDown:nth-child(10) { animation-duration: 3.0s }
+
+@keyframes panDown {
+    from {
+        margin-bottom: 0%;
+    }
+    to {
+        margin-bottom: -100%;
+    }
+}
+
+.scrolling {
+    animation-name: scrolling;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    overflow: hidden;
+}
+
+.scrolling:hover {
+    cursor: default;
+}
+
+@keyframes scrolling {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 110%;
+    }
+}
+
+.scrolling:nth-child(2) { animation-direction: alternate-reverse; animation-duration: 12s }
+.scrolling:nth-child(3) { margin-left: -60%; animation-duration: 10s }
+
+.split {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+    cursor: default;
+}
+
+.split-text h2 {
+    font-size: 130%;
+    font-family: 'Cinzel';
+}
+
+.split-text {
+    font-size: 150%;
+    width: 60%;
+    text-align: center;
+}
+
+.tip-box {
+    background-color: #6b1012;
+    padding: 0 0.25em;
+    border-radius: 1em;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.split-image {
+    display: block;
+    margin: 2% auto;
+    width: 90%;
+}
+
+.line-title {
+    width: 42.5%; 
+    text-align: center; 
+    border-bottom: 1px solid #fff; 
+    line-height: 0.1em;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.line-title span {
+    border-bottom: 0;
+    background: #000; 
+    padding: 10px;
+}
+
+#portrait-warning {
+    visibility: hidden;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    display: inline-block;
+    z-index: 99;
+    cursor: default;
+    background-color: black;
+    padding-bottom: 100%;
+    padding-top: 25%;
+}
+
+@media screen and (max-aspect-ratio: 5/4) {
+    #portrait-warning {
+        visibility: visible;
+    }
+}
