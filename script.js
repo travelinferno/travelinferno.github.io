@@ -88,37 +88,37 @@ buttonTop.addEventListener("click", function () {
 
 const vestibule = document.getElementById("vestibule");
 vestibule.addEventListener("click", function () {
-    window.open("vestibule.html", "_self");
+    window.open("vestibule", "_self");
 });
 const firstCircle = document.getElementById("first-circle");
 firstCircle.addEventListener("click", function () {
-    window.open("first-circle.html", "_self");
+    window.open("first-circle", "_self");
 });
 const secondCircle = document.getElementById("second-circle");
 secondCircle.addEventListener("click", function () {
-    window.open("second-circle.html", "_self");
+    window.open("second-circle", "_self");
 });
 const thirdCircle = document.getElementById("third-circle");
 thirdCircle.addEventListener("click", function () {
-    window.open("third-circle.html", "_self");
+    window.open("third-circle", "_self");
 });
 const fourthCircle = document.getElementById("fourth-circle");
 fourthCircle.addEventListener("click", function () {
-    window.open("fourth-circle.html", "_self");
+    window.open("fourth-circle", "_self");
 });
 const fifthCircle = document.getElementById("fifth-circle");
 fifthCircle.addEventListener("click", function () {
-    window.open("fifth-circle.html", "_self");
+    window.open("fifth-circle", "_self");
 });
 const sixthCircle = document.getElementById("sixth-circle");
 sixthCircle.addEventListener("click", function () {
-    window.open("sixth-circle.html", "_self");
+    window.open("sixth-circle", "_self");
 });
 const seventhCircle = document.getElementById("seventh-circle");
 seventhCircle.addEventListener("click", function () {
-    window.open("seventh-circle.html", "_self");
+    window.open("seventh-circle", "_self");
 });
 const eighthCircle = document.getElementById("eighth-circle");
 eighthCircle.addEventListener("click", function () {
-    window.open("eighth-circle.html", "_self");
+    window.open("eighth-circle", "_self");
 });
