@@ -80,6 +80,11 @@ navLeft.addEventListener("click", function () {
         window.open("./", "_self");
     }
 });
+navRight.addEventListener("click", function () {
+    if (navRight.style.fontFamily == 'Cinzel') {
+        window.open("about", "_self");
+    }
+});
 
 const buttonTop = document.getElementById("button-top");
 buttonTop.addEventListener("click", function () {
@@ -121,4 +126,8 @@ seventhCircle.addEventListener("click", function () {
 const eighthCircle = document.getElementById("eighth-circle");
 eighthCircle.addEventListener("click", function () {
     window.open("eighth-circle", "_self");
+});
+const ninthCircle = document.getElementById("ninth-circle");
+ninthCircle.addEventListener("click", function () {
+    window.open("ninth-circle", "_self");
 });
