@@ -86,11 +86,6 @@ navRight.addEventListener("click", function () {
     }
 });
 
-const buttonTop = document.getElementById("button-top");
-buttonTop.addEventListener("click", function () {
-    window.open("#top", "_self");
-});
-
 const vestibule = document.getElementById("vestibule");
 vestibule.addEventListener("click", function () {
     window.open("vestibule", "_self");
@@ -130,4 +125,9 @@ eighthCircle.addEventListener("click", function () {
 const ninthCircle = document.getElementById("ninth-circle");
 ninthCircle.addEventListener("click", function () {
     window.open("ninth-circle", "_self");
+});
+
+const buttonTop = document.getElementById("button-top");
+buttonTop.addEventListener("click", function () {
+    window.open("#top", "_self");
 });
